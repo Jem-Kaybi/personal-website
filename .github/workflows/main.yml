@@ -6,15 +6,16 @@ on:
       - master  # Trigger the workflow when changes are pushed to the 'main' branch
 
 jobs:
+  
   build-and-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./personal-website
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Setting up root directory
-      working-directory: ./personal-website
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
