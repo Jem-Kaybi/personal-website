@@ -13,6 +13,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Setting up root directory
+      working-directory: ./personal-website
+
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
