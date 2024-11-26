@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./personal-website
+        working-directory: ./
 
     steps:
     - name: Checkout repository
