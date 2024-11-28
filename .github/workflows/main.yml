@@ -34,7 +34,7 @@ jobs:
     - name: Move files to root
       run: |
         shopt -s dotglob
-        mv dist/browser/* . || echo "No files moved"
+        mv dist/browser/* ./dist || echo "No files moved"
         ls -la
 
     - name: Deploy to GitHub Pages
