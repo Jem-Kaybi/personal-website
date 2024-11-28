@@ -30,8 +30,8 @@ jobs:
 
     - name: Move files to root
       run: |
-        mv dist/browser/* .
-        rm -rf dist/browser
+        shopt -s dotglob  # Include hidden files
+        mv dist/browser/* . || true  # Move all files from dist/browser to root
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
