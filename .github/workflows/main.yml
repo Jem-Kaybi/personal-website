@@ -28,8 +28,14 @@ jobs:
     - name: Build the Angular app
       run: npm run build -- --output-path=dist --base-href /personal-website/
 
+    - name: List contents of dist/browser
+      run: ls -la dist/browser
+
     - name: Move files to root
-      run: mv dist/browser/* . || true  # Move all files from dist/browser to root
+      run: |
+        shopt -s dotglob
+        mv dist/browser/* . || echo "No files moved"
+        ls -la
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
