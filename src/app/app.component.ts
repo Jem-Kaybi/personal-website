@@ -8,7 +8,7 @@ import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
   standalone: true,
   imports: [RouterOutlet, ThemeToggleComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'personal-website';

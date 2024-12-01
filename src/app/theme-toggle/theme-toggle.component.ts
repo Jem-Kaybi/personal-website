@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon'; // Import MatIconModule
   templateUrl: './theme-toggle.component.html',
   standalone: true, // Ensure it's standalone
   imports: [MatIconModule], // Add MatIconModule here
-  styleUrls: ['./theme-toggle.component.css'],
+  styleUrls: ['./theme-toggle.component.scss'],
 })
 export class ThemeToggleComponent {
   isDarkMode: boolean;
