@@ -1,0 +1,19 @@
+.bio-section {
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 2rem;
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    border-radius: 8px;
+    line-height: 1.6;
+  }
+  
+  .bio-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bio-section p {
+    margin-bottom: 1rem;
+  }
+  

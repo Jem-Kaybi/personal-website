@@ -4,7 +4,32 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Dark Theme Styles */
-.dark-theme {
-    background-color: #121212;
-    color: #ffffff;
+
+  :root {
+    --primary-bg: #ffffff;
+    --primary-text: #000000;
+    --secondary-bg: #f5f5f5;
   }
+  
+  .dark-theme {
+    --primary-bg: #121212;
+    --primary-text: #ffffff;
+    --secondary-bg: #1e1e1e;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .mat-elevation-z4 {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    padding: 16px;
+    transition: background-color 0.3s;
+  }
+  

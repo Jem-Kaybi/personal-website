@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-bg);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar a {
+    color: var(--primary-text);
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  .navbar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .navbar button mat-icon {
+    font-size: 24px;
+    color: var(--primary-text);
+  }
+  
