@@ -1,1 +1,18 @@
-<p>experience works!</p>
+<mat-expansion-panel *ngFor="let experience of experiences">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ experience.title }}
+      </mat-panel-title>
+      <span class="panel-description">
+        {{ experience.dates }}
+      </span>
+    </mat-expansion-panel-header>
+    <mat-card>
+      <mat-card-content>
+        <ul>
+          <li *ngFor="let tech of experience.tasks">{{ tech }}</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </mat-expansion-panel>
+  
