@@ -5,7 +5,7 @@
       <mat-card class="contact-card" *ngFor="let contact of contactDetails">
         <mat-card-header>
           <mat-icon class="contact-icon">{{ contact.icon }}</mat-icon>
-          <mat-card-title>{{ contact.type }}</mat-card-title>
+          <mat-card-title class="mat-card-header-text">{{ contact.type }}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
           <a [href]="contact.link" target="_blank">{{ contact.value }}</a>
