@@ -1,18 +1,35 @@
-<mat-expansion-panel *ngFor="let experience of experiences">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        {{ experience.title }}
-      </mat-panel-title>
-      <span class="panel-description">
-        {{ experience.dates }}
-      </span>
-    </mat-expansion-panel-header>
-    <mat-card>
+<div class="experience-container">
+  <h2>Professional Experience</h2>
+
+  <div class="experience-grid">
+    <mat-card class="experience-card" *ngFor="let job of experiences">
+      <mat-card-header>
+        <div class="company-logo">
+          <img [src]="job.logo" alt="{{ job.company }} Logo">
+        </div>
+        <div class="company-info">
+          <mat-card-title>{{ job.company }}</mat-card-title>
+          <mat-card-subtitle>{{ job.role }} | {{ job.duration }}</mat-card-subtitle>
+        </div>
+      </mat-card-header>
+
       <mat-card-content>
+        <p class="location"><mat-icon>place</mat-icon> {{ job.location }}</p>
+
+        <h4>Responsibilities</h4>
         <ul>
-          <li *ngFor="let tech of experience.tasks">{{ tech }}</li>
+          <li *ngFor="let task of job.responsibilities">{{ task }}</li>
         </ul>
+
+        <h4>Technologies Used</h4>
+        <div class="tech-chips">
+          <mat-chip-set>
+            <mat-chip *ngFor="let tech of job.technologies" color="primary" selected>
+              {{ tech }}
+            </mat-chip>
+          </mat-chip-set>
+        </div>
       </mat-card-content>
     </mat-card>
-  </mat-expansion-panel>
-  
+  </div>
+</div>
