@@ -4,11 +4,8 @@
     <div class="education-grid">
       <mat-card class="education-card" *ngFor="let edu of educationList">
         <mat-card-header>
-          <div class="education-logo">
-            <img [src]="edu.logo" alt="{{ edu.institution }} Logo">
-          </div>
           <mat-card-title>{{ edu.institution }}</mat-card-title>
-          <mat-card-subtitle>{{ edu.years }}</mat-card-subtitle>
+          <mat-card-subtitle class="mat-card-header-text">{{ edu.years }}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <p>{{ edu.degree }}</p>
