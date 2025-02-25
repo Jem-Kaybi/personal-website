@@ -1,1 +1,30 @@
-<p>personal-projects works!</p>
+<div class="experience-container">
+    <h2>Projects</h2>
+  
+    <div class="experience-grid">
+      <mat-card class="experience-card" *ngFor="let job of projects">
+        <mat-card-header>
+          <div class="company-info">
+            <mat-card-title class="mat-card-header-text">{{ job.name }}</mat-card-title>
+          </div>
+        </mat-card-header>
+  
+        <mat-card-content>
+          <h4>Summary</h4>
+          <ul>
+            <li *ngFor="let task of job.responsibilities">{{ task }}</li>
+          </ul>
+  
+          <h4>Technologies Used</h4>
+          <div class="tech-chips">
+            <mat-chip-set>
+              <mat-chip *ngFor="let tech of job.technologies" color="primary" selected>
+                {{ tech }}
+              </mat-chip>
+            </mat-chip-set>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
