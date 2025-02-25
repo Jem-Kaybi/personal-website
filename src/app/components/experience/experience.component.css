@@ -74,4 +74,5 @@ mat-chip {
 
 .mat-card-header-text {
   color: var(--primary-text);
+  text-align: left;
 }

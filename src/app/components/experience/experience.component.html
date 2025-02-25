@@ -4,12 +4,9 @@
   <div class="experience-grid">
     <mat-card class="experience-card" *ngFor="let job of experiences">
       <mat-card-header>
-        <div class="company-logo">
-          <img [src]="job.logo" alt="{{ job.company }} Logo">
-        </div>
         <div class="company-info">
           <mat-card-title class="mat-card-header-text">{{ job.company }}</mat-card-title>
-          <mat-card-subtitle>{{ job.role }} | {{ job.duration }}</mat-card-subtitle>
+          <mat-card-subtitle class="mat-card-header-text">{{ job.role }} | {{ job.duration }}</mat-card-subtitle>
         </div>
       </mat-card-header>
 
