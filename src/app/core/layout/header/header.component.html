@@ -1,14 +1,20 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="toolbar" color="primary">
     <span>My Portfolio</span>
     <span class="spacer"></span>
-    <nav>
-        <a mat-button routerLink="/app-bio" routerLinkActive="active" aria-current="page">Bio</a>
-        <a mat-button routerLink="/app-experience" routerLinkActive="active" aria-current="page">Experience</a>
-        <a mat-button routerLink="/app-skills" routerLinkActive="active" aria-current="page">Skills</a>
-        <a mat-button routerLink="/app-education" routerLinkActive="active" aria-current="page">Education</a>
-        <a mat-button routerLink="/app-personal-projects" routerLinkActive="active" aria-current="page">Projects</a>
-        <a mat-button routerLink="/app-contact-info" routerLinkActive="active" aria-current="page">Contact</a>
-        <app-theme-toggle></app-theme-toggle>
-      </nav>      
-  </mat-toolbar>
-  
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="navbar-toggle" (click)="toggleMenu()">☰</div>
+
+    <!-- Navbar Links -->
+    <nav class="navbar">
+        <ul class="navbar-links" [class.active]="menuOpen">
+            <li><a mat-button routerLink="/app-bio" routerLinkActive="active">Bio</a></li>
+            <li><a mat-button routerLink="/app-experience" routerLinkActive="active">Experience</a></li>
+            <li><a mat-button routerLink="/app-skills" routerLinkActive="active">Skills</a></li>
+            <li><a mat-button routerLink="/app-education" routerLinkActive="active">Education</a></li>
+            <li><a mat-button routerLink="/app-personal-projects" routerLinkActive="active">Projects</a></li>
+            <li><a mat-button routerLink="/app-contact-info" routerLinkActive="active">Contact</a></li>
+            <li><app-theme-toggle></app-theme-toggle></li>
+        </ul>
+    </nav>
+</mat-toolbar>

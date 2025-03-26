@@ -11,4 +11,10 @@ import { ThemeToggleComponent } from '../../../theme-toggle/theme-toggle.compone
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+}

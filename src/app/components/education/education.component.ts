@@ -18,7 +18,7 @@ export class EducationComponent {
     },
     {
       institution: 'University of the Witwatersrand',
-      degree: 'Bachelor of Science - BS, Computer Science and Information Systems',
+      degree: 'Bachelor of Science - BSc, Computer Science and Information Systems',
       years: '2018 - 2021',
     },
     {
