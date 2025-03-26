@@ -1,4 +1,4 @@
-<div class="contact-container">
+<!-- <div class="contact-container">
     <h2>Contact Me</h2>
   
     <div class="contact-grid">
@@ -12,5 +12,14 @@
         </mat-card-content>
       </mat-card>
     </div>
-  </div>
+  </div> -->
   
+<div class="contact-container">
+  <h2>Contact Me</h2>
+  <ul class="contact-list">
+    <li *ngFor="let contact of contactDetails" class="contact-item">
+      <mat-icon class="contact-icon">{{ contact.icon }}</mat-icon>
+      <a [href]="contact.link" target="_blank">{{ contact.value }}</a>
+    </li>
+  </ul>
+</div>

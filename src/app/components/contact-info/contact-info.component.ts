@@ -37,4 +37,16 @@ export class ContactInfoComponent {
       link: 'tel:+27845293333'
     }
   ];
+
+  userMessage = {
+    name: '',
+    email: '',
+    message: ''
+  };
+
+  submitMessage() {
+    console.log('Message submitted:', this.userMessage);
+    alert('Your message has been sent!');
+    this.userMessage = { name: '', email: '', message: '' }; // Reset form
+  }
 }
