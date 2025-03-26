@@ -46,7 +46,7 @@
   
   mat-card-subtitle {
     font-size: 14px;
-    color: gray;
+    color: var(--secondary-text);
   }
   
   mat-card-content p {

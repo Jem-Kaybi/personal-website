@@ -9,7 +9,7 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #3f51b5;
+    color: var(--accent-colour);
   }
   
   .category-section {
@@ -19,7 +19,7 @@
   h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: var(--secondary-text);
     margin-bottom: 20px;
     text-align: left;
   }
@@ -56,13 +56,13 @@
     transform: translate(-50%, -50%);
     font-size: 16px;
     font-weight: bold;
-    color: #3f51b5;
+    color: var(--accent-colour);
   }
   
   .skill-name {
     margin-top: 12px;
     font-weight: 600;
     font-size: 14px;
-    color: #333;
+    color: var(--secondary-text);
   }
   
